@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MailFleet - Rapid Modular Email</title>
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a { padding: 0; }
+    .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode:bicubic; }
+    /* RESET STYLES */
+    body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    /* Remove margin on email wrapper in Android 4.4 KitKat */
+    /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+    /* Remove ios blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* Outline styles */
+    @media only screen and (max-width: 599px) {
+      .content-table {
+        width: 100% !important;
+      }
+
+      img[class="img-max"]{
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      table[class="mobile-button-wrap"]{
+        margin: 0 auto;
+        width: 100% !important;
+      }
+
+      a[class="mobile-button"]{
+        width: 80% !important;
+        padding: 8px !important;
+        border: 0 !important;
+      }
+
+      .mobile-align-center {
+        text-align: center !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important;">
+
+<!-- hidden preheader text - Remember to change it! -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
+  HIDDEN PREHEADER - MAKE SURE YOU CHANGE IT
+</div>
+
+<!-- Don't forget to include a header -->
+<!-- view in browser full -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td bgcolor="#dce8ef" align="center">
+            <table style="min-width: 320px;" class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 8px 16px 8px 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" align="center">
+                        <a style="color: #333333; text-decoration: none;" href="http://www.matt-harris.net">If you'd like, you can view this in a browser.</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /view in browser full -->
+
+<!-- Include all your body email components here -->
+<!-- Header full centre -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td bgcolor="#AAB2BD" align="center">
+      <table style="min-width: 320px;" class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 16px 16px 16px 16px;" align="center" valign="top">
+            <a href="/">
+              <img style="display: block" src="http://placehold.it/350x60" width="280" height="28" border="0" alt="">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Header full centre -->
+<!-- Hero image, title, text, cta -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="padding: 0 0 16px 0;" align="left">
+                        <a href="#" target="_blank">
+                          <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 600px; height: 250px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" width="600" height="250" border="0">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding: 0 0 8px 0; color: #323133; font-family: Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px;">
+                        The clean &amp; simple framework
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding: 0 0 16px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <!-- Button -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center">
+                                    <a style="background-color: #CCD1D9; border-top: 8px solid #CCD1D9; border-right: 16px solid #CCD1D9; border-bottom: 8px solid #CCD1D9; border-left: 16px solid #CCD1D9; display: inline-block; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none;" href="http://outlinemail.co.uk" target="_blank">Get started &#8594;</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /Button -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Hero image, title, text, cta --><!-- Hero image, title, text, cta -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="padding: 0 0 16px 0;" align="left">
+                        <a href="#" target="_blank">
+                          <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 600px; height: 250px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" width="600" height="250" border="0">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Hero image, title, text, cta -->
+<!-- List image title author -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0 0 16px 0; color: #323133; font-family: Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px;">
+                        Amazing Articles
+                      </td>
+                    </tr>
+                    <!-- list item 1 -->
+                    <tr>
+                      <td style="padding: 24px 0 24px 0; border-top: 1px solid #dce8ef;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" valign="top">
+                              <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 40px; height: 40px;" src="http://outlinemail.co.uk/img/min/circle-img-placeholder.jpg" alt="Outline Mail" width="40" height="40" border="0">
+                            </td>
+                            <td align="left" style="padding-left: 4px;" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td align="left" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;">
+                                    <a style="color: #333333; text-decoration: none;" href="#">Place title here for item one</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="color: #656D78; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" colspan="2">
+                                    place copy here
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- list item 2 -->
+                    <tr>
+                      <td style="padding: 24px 0 24px 0; border-top: 1px solid #dce8ef;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" valign="top">
+                              <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 40px; height: 40px;" src="http://outlinemail.co.uk/img/min/circle-img-placeholder.jpg" alt="Outline Mail" width="40" height="40" border="0">
+                            </td>
+                            <td align="left" style="padding-left: 4px;" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td align="left" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;">
+                                    <a style="color: #333333; text-decoration: none;" href="#">Place title here for item two</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="color: #656D78; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" colspan="2">
+                                      place copy here
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- list item 3 -->
+                    <tr>
+                      <td style="padding: 24px 0 24px 0; border-top: 1px solid #dce8ef;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" valign="top">
+                              <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 40px; height: 40px;" src="http://outlinemail.co.uk/img/min/circle-img-placeholder.jpg" alt="Outline Mail" width="40" height="40" border="0">
+                            </td>
+                            <td align="left" style="padding-left: 4px;" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td align="left" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;">
+                                    <a style="color: #333333; text-decoration: none;" href="#">Place title here for item three</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="color: #656D78; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" colspan="2">
+                                      place copy here
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- list item 4 -->
+                    <tr>
+                      <td style="padding: 24px 0 24px 0; border-top: 1px solid #dce8ef;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left" valign="top">
+                              <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 40px; height: 40px;" src="http://outlinemail.co.uk/img/min/circle-img-placeholder.jpg" alt="Outline Mail" width="40" height="40" border="0">
+                            </td>
+                            <td align="left" style="padding-left: 4px;" valign="top">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td align="left" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;">
+                                    <a style="color: #333333; text-decoration: none;" href="#">Place title here for item three</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="color: #656D78; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" colspan="2">
+                                      place copy here
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /List image title author -->
+<!-- Hero title, text, cta -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0 0 8px 0; color: #323133; font-family: Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px;">
+                        The clean &amp; simple framework
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding: 0 0 16px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <!-- Button -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center">
+                                    <a style="background-color: #CCD1D9; border-top: 8px solid #CCD1D9; border-right: 16px solid #CCD1D9; border-bottom: 8px solid #CCD1D9; border-left: 16px solid #CCD1D9; display: inline-block; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none;" href="http://outlinemail.co.uk" target="_blank">Get started &#8594;</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /Button -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Hero title, text, cta --><!-- Two up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 0 0;" bgcolor="#ffffff" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <a href="#" target="_blank">
+                                <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" width="272" height="153" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 8px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;" align="left">
+                            </td>
+                          </tr>
+                          
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="left">
+                              <a href="#" target="_blank">
+                                <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 272px; height: 153px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" width="272" height="153" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 8px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;" align="left">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <!-- /Two column -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Two up -->
+<!-- Hero title, text, cta -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0 0 8px 0; color: #323133; font-family: Helvetica, Arial, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px;">
+                        The clean &amp; simple framework
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding: 0 0 16px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Hero title, text, cta -->
+<!-- List title author -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 0 0 32px 0;" bgcolor="#ffffff" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <!-- list item 1 -->
+                    <tr>
+                      <td style="padding: 10px 0 10px 0;">
+                        <a href="LINK">The quick brown fox jumps over the lazy dog</a>
+                      </td>
+                    </tr>
+                    <!-- list item 2 -->
+                    <tr>
+                      <td style="padding: 10px 0 10px 0;">
+                        <a href="LINK">The quick brown fox jumps over the lazy dog</a>
+                      </td>
+                    </tr>
+                    <!-- list item 3 -->
+                    <tr>
+                      <td style="padding: 10px 0 10px 0;">
+                        <a href="LINK">The quick brown fox jumps over the lazy dog</a>
+                      </td>
+                    </tr>
+                    <!-- list item 4 -->
+                    <tr>
+                      <td style="padding: 10px 0 10px 0;">
+                        <a href="LINK">The quick brown fox jumps over the lazy dog</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /List title author -->
+
+<!-- Don't forget to include a footer -->
+<!-- footer full -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 32px 0 0 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td bgcolor="#dce8ef" align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 16px 16px 16px 16px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" align="left">
+                        Mailfleet <a style="color: #38A1D6; text-decoration: none;" href="/"> keepin it 100%</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;" align="left">
+                        <a style="color: #38A1D6; text-decoration: none;" href="#">View this email in your browser</a> | <a style="color: #38A1D6; text-decoration: none;" href="#">Unsubscribe</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /footer full -->
+
+</body>
+</html>

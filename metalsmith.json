@@ -1,0 +1,12 @@
+{
+  "source": "station/",
+  "destination": "dist",
+  "clean": false,
+  "plugins": {
+    "metalsmith-in-place": {
+      "engine": "handlebars",
+      "rename": true,
+      "partials": "modules/"
+    }
+  }
+}
