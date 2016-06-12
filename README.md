@@ -1,6 +1,8 @@
 # MailFleet
 MailFleet - Rapid Modular Email
 
+![Alt text](https://www.dropbox.com/s/rfvhtu3xnerk0eo/MailFleet__logo-name.png?dl=1 "Optional title")
+
 Lets be honest here HTML emails are the worst, worse than your first kiss, and that time your friend told you he/she ran a half marathon
 (Great! you half accomplished half of something, stickers for you! -_-).<br>
 
