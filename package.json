@@ -2,11 +2,10 @@
   "name": "mailfleet",
   "version": "1.0.0",
   "description": "rapid modular email",
-  "main": "orbiter.html",
   "scripts": {
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
     "templates:compile": "metalsmith",
-    "watch:templates": "nodemon --ext hbs --ext html --ignore node_modules/ --ignore /dist --exec 'npm run templates:compile'",
+    "watch:templates": "nodemon --ext hbs --ignore node_modules/ --ignore /dist --exec 'npm run templates:compile'",
     "watch": "parallelshell 'npm run watch:templates' 'npm run serve'",
     "start": "npm run watch"
   },
