@@ -14,7 +14,7 @@ just saved you from a self inflicted head injury. Run 'npm start' to start the m
 
 ## What Do I Get
 I have for you
-- 50 Premade HTML Email Modules included from the kind [Matt Harris](http://outlinemail.co.uk/)
+- 50 Premade HTML Email Modules included from the kind [John Doe]()
 - Gabe Newell giving you a straight answer to a question.
 - Profit.
 
