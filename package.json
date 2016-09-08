@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "rapid modular email",
   "scripts": {
-    "serve": "browser-sync start --server dist --files 'dist/**/*'",
+    "serve": "browser-sync start --server dist --files '**/*'",
     "templates:compile": "metalsmith",
     "watch:templates": "nodemon --ext hbs --ignore node_modules/ --ignore /dist --exec 'npm run templates:compile'",
     "watch": "parallelshell 'npm run watch:templates' 'npm run serve'",

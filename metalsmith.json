@@ -1,5 +1,5 @@
 {
-  "source": "station/",
+  "source": "hub/",
   "destination": "dist",
   "clean": false,
   "plugins": {
