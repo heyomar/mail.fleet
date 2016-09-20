@@ -1,32 +1,31 @@
-# Contributing to MailFleet
+# &lt;MailFleet&gt; is an [OPEN Open Source Project](http://openopensource.org/)
 
-## Reporting Bugs
-One of the easiest and most useful things you can do is submit bug reports to
-Gitlab. Please reduce the case as much as you possibly can.
+-----------------------------------------
 
-## Bugfixes
-MailFleet actively encourages any bugfixes that are verified. Please fork the
-repo and submit a pull request and your fix will be integrated at the nearest
-convenient time.
+## What?
 
-## New Mail Modules
-New mail modules are the best thing you can possibly send. They should be tested
-if possible but will definitely be tested against supported clients before
-integration into MailFleet. If the tests fail, you will be informed of which
-tests were failing so you can fix these problems.
+Individuals making significant and valuable contributions are given
+commit-access to the project to contribute as they see fit. This project
+is more like an open wiki than a standard guarded open source project.
 
-## Improvements
-Improvements in speed, performance, or functionality that do not deviate from
-the current operational or UX paradigms will generally be accepted. As long as
-you aren't changing functionality, these sorts of pull requests are mostly
-welcomed, but if you're doing something highly opinionated, you might want to
-open an issue or ping a maintainer about it first.
+## Rules
 
-## Changes Breaking or Otherwise
-Changes are often welcomed but you should check with the maintainers before
-working on these because it might be contrary to already-established app
-functionality or philosophy. We're open to change but certain decisions have
-been made for a reason so we would hate to see you put a bunch of effort into
-improvements only to find out they cannot be accepted.
+There are a few basic ground-rules for contributors:
 
-Thanks for your interest in contributing!
+1. **No `--force` pushes** or modifying the Git history in any way.
+1. **Non-master branches** ought to be used for ongoing work.
+1. **External API changes and significant modifications** ought to be subject to an **internal pull-request** to solicit feedback from other contributors.
+1. Internal pull-requests to solicit feedback are *encouraged* for any other non-trivial contribution but left to the discretion of the contributor.
+1. Contributors should attempt to adhere to the prevailing code-style.
+
+## Releases
+
+Declaring formal releases remains the prerogative of the project maintainer.
+
+## Changes to this arrangement
+
+This is an experiment and feedback is welcome! This document may also be
+subject to pull-requests or changes by contributors where you believe
+you have something valuable to add or change.
+
+Get a copy of this manifesto as [markdown](https://raw.githubusercontent.com/openopensource/openopensource.github.io/master/Readme.md) and use it in your own projects.
