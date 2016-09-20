@@ -9,9 +9,7 @@ The Red Wedding and more like you just got done eating Thanksgiving dinner with
 your slightly racist grandmother.
 
 ## How Does It Work
-1. `npm install`
-1. `npm start`
-1. relax.
+Good question.
 
 ## What Do I Get
 I have for you
