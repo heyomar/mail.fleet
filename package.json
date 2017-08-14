@@ -2,12 +2,14 @@
   "name": "mailfleet",
   "version": "1.0.0",
   "description": "rapid modular email",
+  "repository": "",
   "scripts": {
     "start": "npm run watch",
     "watch": "concurrently 'npm run watch:templates' 'npm run serve'",
-    "serve": "browser-sync start --server --port 7777 --files 'hub/' --index 'dist/index.html'",
+    "serve": "browser-sync start --server --port 7777 --files 'dist/index.html' --index 'dist/index.html'",
     "watch:templates": "nodemon --ext hbs --ignore node_modules/ --ignore /dist --exec 'npm run templates:compile'",
-    "templates:compile": "metalsmith"
+    "templates:compile": "metalsmith",
+    "send": "node nodemailer"
   },
   "author": "Omar Rasool & Paul Graham",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
     "metalsmith-in-place": "^1.4.4",
+    "nodemailer": "^4.0.1",
     "nodemon": "^1.11.0"
   }
 }
