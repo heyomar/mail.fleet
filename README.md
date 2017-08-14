@@ -9,6 +9,11 @@ the metalsmith compiler will grab those module files and compile them into the d
 Once you get all the modules you like, you can take the compiled file, insert your content, make any changes, and presto I've 
 just saved you from a self inflicted head injury. Run 'npm start' to begin the dev enironment which includes browser-sync.
 
+## Can I Test Emails?
+Yes you can! Mailfleet uses nodemailer to send the emails you build.
+Just change the variables in the nodemailer.js file with your info.
+Run 'npm run send' when your email has finished compiling to send a test email.
+
 ## What Do I Get
 I have for you
 - 50 Premade HTML Email Modules included from [Matt Harris] outline project.
