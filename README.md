@@ -1,29 +1,22 @@
 # MailFleet: Rapid Modular Email
-
-Lets be honest here HTML emails are the worst, worse than your first kiss, and that time your friend told you he/she ran a half marathon
-(Great! you half accomplished half of something, stickers for you! -_-).
-
-Anyway! I've built something that makes them feel less like you were invited to The Red Wedding and more like you just got done eating
-Thanksgiving dinner with your slightly racist grandmother.
+HTML emails are a headache to write, but they can be a little easier with this prebuilt workflow. Quickly build emails by
+stacking modules you want, then have it all compiled for you. Mailfleet gives you a massive headstart in creating your custom html templates by
+having a ready made library of common html patterns. The 50 premade html patterns are also tested and compatiable with 30+ email clients. 
 
 ## How Does It Work
-Using handlebar expressions you can include modules you want to stack in the Orbiter.html file in the Station folder. On save, 
-the metalsmith compiler will grab those module files and compile all the modules you want into the dist folder. 
+Using handlebar expressions you can include modules you want to stack in the hub/index.hbs file. On save, 
+the metalsmith compiler will grab those module files and compile them into the dist folder to create index.html. 
 Once you get all the modules you like, you can take the compiled file, insert your content, make any changes, and presto I've 
-just saved you from a self inflicted head injury. Run 'npm start' to start the metalsmith compiler and browser-sync.
+just saved you from a self inflicted head injury. Run 'npm start' to begin the dev enironment which includes browser-sync.
 
 ## What Do I Get
 I have for you
-- 50 Premade HTML Email Modules included from the kind [John Doe]()
-- Gabe Newell giving you a straight answer to a question.
+- 50 Premade HTML Email Modules included from [Matt Harris] outline project.
 - Profit.
 
-
-This Project is not complete so please chill.
+This Project is not complete so please feel free to reach out with ideas and contributions.
 
 ## Things I Need to Do
-- Add placeholders for dummy content
 - Add more modules
 - Create a Second micro module process compiler
-- Learn what a "Nae Nae" is.
 
