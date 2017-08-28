@@ -1,7 +1,7 @@
 {
   "name": "mailfleet",
   "version": "1.0.0",
-  "description": "rapid modular email",
+  "description": "Rapid Modular Email",
   "repository": "",
   "scripts": {
     "start": "npm run watch",
