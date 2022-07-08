@@ -15,11 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "latest",
-    "concurrently": "^3.5.0",
-    "handlebars": "^4.0.5",
-    "metalsmith": "^2.1.0",
+    "concurrently": "^7.2.2",
+    "handlebars": "^4.7.7",
+    "metalsmith": "^2.5.0",
     "metalsmith-in-place": "^1.4.4",
-    "nodemailer": "^4.0.1",
-    "nodemon": "^1.11.0"
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19"
   }
 }
